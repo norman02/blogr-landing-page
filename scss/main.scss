@@ -1,8 +1,12 @@
 @import 'abstracts/variables';
 @import 'abstracts/funtions';
+@import 'abstracts/mixins';
 
 @import 'base/reset';
+@import 'base/typography';
 
 @import 'components/hamburger';
 
 @import 'layouts/navigation';
+@import 'layouts/header';
+
