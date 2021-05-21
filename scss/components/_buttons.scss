@@ -1,0 +1,41 @@
+.btn {
+    @include ubuntu(16, 18, 700);
+    text-align: center;
+    padding: toRem(8) toRem(16) toRem(22) toRem(16);
+    min-width: toRem(137);
+    border-radius: 28px;
+
+}
+
+.btn--light {
+    background-color: $header-text-color;
+    color: $cta-text-color;
+
+    &:hover {
+        background-color: $cta-hover-color;
+        color: $header-text-color;
+    }
+
+    &:focus {
+        outline: none;
+        background-color: $cta-hover-color;
+        color: $header-text-color;
+    }
+}
+
+.btn--dark {
+    border: 1px solid $header-text-color;
+    background: transparent;
+    color: $header-text-color;
+    
+    &:hover {
+        background: $header-text-color;
+        color: $cta-text-color;
+    }
+
+    &:focus {
+        outline: none;
+        background: $header-text-color;
+        color: $cta-text-color;
+    }
+}
