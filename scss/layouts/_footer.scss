@@ -1,0 +1,27 @@
+footer {
+    background-color: $footer-background-color;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    padding-top: toRem(75);
+    padding-bottom: toRem(75);
+
+    h2 {
+       @include ubuntu(18, 33, 500);
+       color: $footer-text-color; 
+    }
+
+    ul {
+        margin-top: toRem(34);
+        margin-bottom: toRem(40);
+    }
+
+    a {
+        @include ubuntu(18, 33, 400);
+        color: $footer-text-color;
+        opacity: 0.75;
+    }
+
+    .one {
+        margin-top: toRem(72.75);
+    }
+}

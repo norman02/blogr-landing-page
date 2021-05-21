@@ -106,4 +106,38 @@ header .button-container {
 header .button-container button {
   margin-right: 2rem;
 }
+
+footer {
+  background-color: #25252d;
+  border-radius: 0 100px 0 0;
+  text-align: center;
+  padding-top: 4.6875rem;
+  padding-bottom: 4.6875rem;
+}
+
+footer h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  line-height: 2.0625rem;
+  font-weight: 500;
+  color: white;
+}
+
+footer ul {
+  margin-top: 2.125rem;
+  margin-bottom: 2.5rem;
+}
+
+footer a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  line-height: 2.0625rem;
+  font-weight: 400;
+  color: white;
+  opacity: 0.75;
+}
+
+footer .one {
+  margin-top: 4.54688rem;
+}
 /*# sourceMappingURL=main.css.map */
