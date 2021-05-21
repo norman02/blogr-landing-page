@@ -1,0 +1,8 @@
+.hamburger {
+    .bar {
+        width: toRem(32);
+        height: toRem(3);
+        background-color: $header-text-color;
+        margin: toRem(6) 0;
+    }
+}

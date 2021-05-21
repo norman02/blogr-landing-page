@@ -1,11 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
-    line-height: 1;
-    list-style: none;
+@import 'abstracts/variables';
+@import 'abstracts/funtions';
+
+@import 'base/reset';
+
+@import 'components/hamburger';
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: $header-text-color;
+    background-color: $header-bg-color;
 }
+
