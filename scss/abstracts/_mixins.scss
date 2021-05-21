@@ -1,0 +1,6 @@
+@mixin ubuntu ($font-size, $line-height, $weight) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: toRem($font-size);
+    line-height: toRem($line-height);
+    font-weight: $weight;
+}
