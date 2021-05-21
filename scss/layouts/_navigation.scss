@@ -1,0 +1,7 @@
+nav {
+    padding: toRem(56) toRem(24);
+    display: flex;
+    justify-content: space-between;
+    color: $header-text-color;
+    background: transparent;
+}

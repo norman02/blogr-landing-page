@@ -5,13 +5,4 @@
 
 @import 'components/hamburger';
 
-
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    color: $header-text-color;
-    background-color: $header-bg-color;
-}
-
+@import 'layouts/navigation';
