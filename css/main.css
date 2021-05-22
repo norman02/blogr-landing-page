@@ -112,6 +112,7 @@ nav .top {
 }
 
 nav .menu {
+  display: none;
   position: absolute;
   width: 87.2%;
   margin-top: 2.3125rem;
@@ -129,15 +130,6 @@ nav .menu h2 a {
   font-weight: 500;
   color: #1F3E5A;
   margin-bottom: 2.125rem;
-}
-
-nav .menu h2 img {
-  margin-bottom: -0.25rem;
-  margin-left: 0.625rem;
-}
-
-nav .menu ul {
-  display: none;
 }
 
 nav .menu .one {
@@ -163,6 +155,40 @@ nav .menu .login a {
 nav .menu .login button {
   display: block;
   margin: auto;
+}
+
+nav img {
+  margin-bottom: -0.25rem;
+  margin-left: 0.625rem;
+}
+
+nav ul {
+  display: none;
+  max-width: 17.25rem;
+  margin: auto;
+  margin-top: 2.125rem;
+  background-color: #EFEFF0;
+  border-radius: 5px;
+  padding-top: 1.0625rem;
+  padding-bottom: 2.3125rem;
+}
+
+nav ul a {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #4b5862;
+  opacity: 0.75;
+}
+
+nav .active {
+  display: block;
+}
+
+nav .active img {
+  display: inline;
+  transform: rotate(180deg);
 }
 
 header {

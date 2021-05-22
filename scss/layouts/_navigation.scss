@@ -9,6 +9,7 @@ nav {
     }
 
     .menu {
+        display: none;
         position: absolute;
         width: 87.2%;
         margin-top: toRem(37);
@@ -25,16 +26,9 @@ nav {
                 margin-bottom: toRem(34);
             }
 
-            img {
-                margin-bottom: toRem(-4);
-                margin-left: toRem(10);
-            }
             
-        }
-
-        ul {
-            display: none;
-        }
+            
+        }  
 
         .one {
             margin-top: toRem(24);
@@ -57,6 +51,41 @@ nav {
                 margin: auto;
                 
             }
+        }
+
+        
+    }
+
+    img {
+        margin-bottom: toRem(-4);
+        margin-left: toRem(10);
+    }
+
+    ul {
+        display: none;
+        max-width: toRem(276);
+        margin: auto;
+        margin-top: toRem(34);
+        background-color: #EFEFF0;
+        border-radius: 5px;
+        padding-top: toRem(17);
+        padding-bottom: toRem(37);
+
+        a {
+            @include overpass(16, 28, 500);
+            color: $body-text-color;
+            opacity: 0.75;
+        }
+    
+    }
+
+    .active {
+        display: block;
+        
+
+        img {
+            display: inline;
+            transform: rotate(180deg); 
         }
     }
 }
