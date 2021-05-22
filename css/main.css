@@ -51,7 +51,7 @@ p {
 
 .btn--light {
   background-color: white;
-  color: #ff525d;
+  color: #B3000C;
 }
 
 .btn--light:hover {
@@ -73,13 +73,13 @@ p {
 
 .btn--dark:hover {
   background: white;
-  color: #ff525d;
+  color: #B3000C;
 }
 
 .btn--dark:focus {
   outline: none;
   background: white;
-  color: #ff525d;
+  color: #B3000C;
 }
 
 nav {
