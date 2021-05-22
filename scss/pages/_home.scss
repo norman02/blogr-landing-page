@@ -1,0 +1,103 @@
+.first {
+    margin-top: toRem(100);
+
+    h2 {
+        letter-spacing: -0.84px;
+    }
+
+    .img-container {
+        width: toRem(326);
+        height: toRem(326);
+        margin: toRem(53) auto toRem(46) auto;
+        background-image: url('../images/illustration-editor-mobile.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.second {
+    p {
+        margin: toRem(16) toRem(24) toRem(40) toRem(33);
+    }
+}
+
+.third {
+    h2 {
+        max-width: toRem(318);
+        margin: 0 auto;
+    }
+
+    p {
+        margin: toRem(16) toRem(24) toRem(100.44) toRem(33);
+    }
+}
+
+.fourth {
+    .img-container{
+        position: relative;
+        width: toRem(326.44);
+        height: toRem(345.25);
+        margin-bottom: toRem(-172.63);
+        background-color: transparent;
+        background: url('../images/illustration-phones.svg');
+        background-size: contain;
+        background-position: center;
+        z-index: 5;
+    }
+
+    .content-container {
+        padding-top: toRem(221);
+        padding-bottom: toRem(109);
+        background: $background-grad;
+        border-radius: 0px 100px;
+        overflow: hidden;
+        
+        
+
+        h2 {
+            @include overpass(40, 48, 500);
+            letter-spacing: -1.2px;
+            color: $header-text-color;  
+        }
+
+        p {
+            margin: toRem(28) toRem(24) 0 toRem(33);
+            color: $header-text-color;
+        }
+    } 
+
+    .content-container::after {
+        content: "";
+        margin-top: toRem(-513);
+        width: 100%;
+        height: toRem(602);
+        display: inline-block;
+        position: relative;
+        background: url('../images/bg-pattern-circles.svg'), transparent;
+        background-size: cover ;
+        background-position: center toRem(-302);
+        background-repeat: no-repeat;
+    }
+}
+
+.fifth {
+    .img-container {
+        width: toRem(326);
+        height: toRem(326);
+        margin: toRem(79) auto toRem(46) auto;
+        background-image: url('../../images/illustration-laptop-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        margin: toRem(16) toRem(24) toRem(40) toRem(33);
+    }
+}
+
+.sixth {
+    p {
+        margin: toRem(16) toRem(24) toRem(100) toRem(33);
+    }
+}
