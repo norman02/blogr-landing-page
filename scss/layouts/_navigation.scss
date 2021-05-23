@@ -20,14 +20,12 @@ nav {
         border-radius: 5px;
 
         h2 {
-            a {
-                @include overpass(18, 28, 500);
-                color: #1F3E5A;
-                margin-bottom: toRem(34);
-            }
-
-            
-            
+            @include overpass(18, 28, 500);
+            display: inline;
+            color: #1F3E5A;
+            margin: auto;
+            margin-bottom: toRem(34);
+            cursor: pointer;      
         }  
 
         .one {
@@ -80,12 +78,18 @@ nav {
     }
 
     .active {
-        display: block;
+        display: block;       
         
+    }
 
+    .show {
         img {
             display: inline;
             transform: rotate(180deg); 
+        }
+
+        ul {
+            display: block;
         }
     }
 }
