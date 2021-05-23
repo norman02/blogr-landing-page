@@ -12,3 +12,13 @@ const changeBurger = ()=> {
 }
 
 hamburger.addEventListener('click', changeBurger);
+
+document.querySelectorAll('.collapse').forEach(item =>{
+    item.addEventListener('click', e=> {
+        if(item.classList.contains('show')) {
+            item.classList.remove('show')
+        } else {
+            item.classList.add('show')
+        }
+    })
+})

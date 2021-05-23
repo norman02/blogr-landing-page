@@ -142,13 +142,16 @@ nav .menu {
   border-radius: 5px;
 }
 
-nav .menu h2 a {
+nav .menu h2 {
   font-family: 'Overpass', sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
+  display: inline;
   color: #1F3E5A;
+  margin: auto;
   margin-bottom: 2.125rem;
+  cursor: pointer;
 }
 
 nav .menu .one {
@@ -205,9 +208,13 @@ nav .active {
   display: block;
 }
 
-nav .active img {
+nav .show img {
   display: inline;
   transform: rotate(180deg);
+}
+
+nav .show ul {
+  display: block;
 }
 
 header {
