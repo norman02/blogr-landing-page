@@ -66,6 +66,7 @@ p {
   min-width: 8.5625rem;
   border-radius: 28px;
   cursor: pointer;
+  transition: 0.75s;
 }
 
 .btn--light {
