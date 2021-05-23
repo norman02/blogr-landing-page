@@ -3,6 +3,28 @@ nav {
     color: $header-text-color;
     background: transparent;
 
+    .logo {
+        height: toRem(39.43);
+
+        @include media-md {
+            margin-right: toRem(64.38);
+        }
+    }
+
+    @include media-md {
+        display: flex;
+        align-items: center;
+        padding: toRem(58) toRem(58);
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    @include media-lg {
+        padding: toRem(63) toRem(167);
+    }
+
     .top {
         display: flex;
         justify-content: space-between;
@@ -19,17 +41,62 @@ nav {
         box-shadow: 0px 20px 40px #0000003E;
         border-radius: 5px;
 
+        @include media-md {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            background: transparent;
+            box-shadow: none;
+
+            .section-container {
+                display: flex;
+            }
+            
+        }
+
         h2 {
             @include overpass(18, 28, 500);
             display: inline;
             color: #1F3E5A;
             margin: auto;
             margin-bottom: toRem(34);
-            cursor: pointer;      
+            cursor: pointer;
+            
+            .light-arrow {
+                display: none;
+            }
+            
+            @include media-md {
+                @include ubuntu(16, 18, 700);
+                color: $header-text-color;
+                margin: 0;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                .dark-arrow {
+                    display: none;
+                }
+
+                .light-arrow {
+                    display: inline;
+                }
+            }
         }  
 
         .one {
             margin-top: toRem(24);
+
+            @include media-md {
+                margin-top: 0;
+            }
         }
 
         .login {
@@ -49,6 +116,20 @@ nav {
                 margin: auto;
                 
             }
+
+            @include media-md {
+                margin: 0;
+                border: none;
+                display: flex;
+                align-items: center;
+
+                a {
+                    @include ubuntu(18, 18, 700);
+                    color: $header-text-color;
+                    margin: 0;
+                    margin-right: toRem(32);
+                }
+            }
         }
 
         
@@ -57,6 +138,16 @@ nav {
     img {
         margin-bottom: toRem(-4);
         margin-left: toRem(10);
+
+        @include media-md {
+            margin-left: toRem(2);
+            margin-right: toRem(18);
+        }
+
+        @include media-lg {
+            margin-left: toRem(8);
+            margin-right: toRem(32);
+        }
     }
 
     ul {
@@ -73,6 +164,25 @@ nav {
             @include overpass(16, 28, 500);
             color: $body-text-color;
             opacity: 0.75;
+        }
+
+        @include media-md {
+            width: toRem(168);
+            position: absolute;
+            background-color: $header-text-color;
+            box-shadow: 0px 20px 40px #0000003E;
+            text-align: center;
+
+            a {
+                @include ubuntu(15, 33, 400) {
+                    color: #2D2E40;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    font-weight: 700;
+                }
+            }
         }
     
     }
