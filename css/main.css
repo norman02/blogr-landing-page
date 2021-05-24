@@ -153,6 +153,14 @@ nav .logo {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  nav {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 nav .top {
   display: flex;
   justify-content: space-between;
@@ -504,6 +512,14 @@ footer .one {
 @media screen and (min-width: 800px) {
   footer .one {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .grid1 {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

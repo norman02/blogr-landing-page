@@ -25,6 +25,12 @@ nav {
         padding: toRem(63) toRem(167);
     }
 
+    @include media-xl {
+        max-width: 1800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .top {
         display: flex;
         justify-content: space-between;

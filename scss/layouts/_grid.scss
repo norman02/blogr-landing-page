@@ -1,5 +1,11 @@
 .grid1 {
 
+    @include media-xl {
+        max-width: 1800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
     .first {
         grid-area: first;
     }
@@ -21,4 +27,5 @@
         row-gap: 0;
         padding-left: toRem(165);
     }
+
 }
