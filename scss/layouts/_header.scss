@@ -4,6 +4,10 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0px 0px 0px 100px;
+
+    @include media-md {
+        border-radius: 0;
+    }
     
 
     h1 {
@@ -11,6 +15,15 @@ header {
         text-align: center;
         letter-spacing: -1.08px;
         color: $header-text-color;
+
+        @include media-md {
+            @include overpass(52, 64, 500);
+        }
+
+        @include media-lg {
+            @include overpass(64, 77, 500);
+            letter-spacing: -1.92px
+        }
     }
 
     p {
@@ -18,6 +31,11 @@ header {
         text-align: center;
         margin-top: toRem(27);
         color: $header-text-color;
+
+        @include media-md {
+            @include overpass(20, 24, 400);
+            margin-top: toRem(32);
+        }
     }
 
     .button-container {
@@ -26,6 +44,10 @@ header {
         
         button {
             margin-right: toRem(32);
+
+            @include media-md {
+                margin-right: toRem(16);
+            }
         }
     }
 }

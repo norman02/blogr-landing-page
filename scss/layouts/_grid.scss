@@ -1,0 +1,31 @@
+.grid1 {
+
+    @include media-xl {
+        max-width: 1800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .first {
+        grid-area: first;
+    }
+    .second {
+        grid-area: second;
+    }
+
+    .third {
+        grid-area: third;
+    }
+
+    .lrg-img-container {
+        grid-area: img;
+    }
+    @include media-lg {
+        display: grid;
+        grid-template-areas: 'first first' 'second img'  'third img' 'x img';
+        column-gap: toRem(41);
+        row-gap: 0;
+        padding-left: toRem(165);
+    }
+
+}
