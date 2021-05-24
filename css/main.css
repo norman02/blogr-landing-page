@@ -507,12 +507,60 @@ footer .one {
   }
 }
 
+.grid1 .first {
+  grid-area: first;
+}
+
+.grid1 .second {
+  grid-area: second;
+}
+
+.grid1 .third {
+  grid-area: third;
+}
+
+.grid1 .lrg-img-container {
+  grid-area: img;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid1 {
+    display: grid;
+    grid-template-areas: 'first first' 'second img'  'third img' 'x img';
+    column-gap: 2.5625rem;
+    row-gap: 0;
+    padding-left: 10.3125rem;
+  }
+}
+
 .first {
   margin-top: 6.25rem;
 }
 
+@media screen and (min-width: 800px) {
+  .first {
+    margin-top: 9.375rem;
+  }
+}
+
 .first h2 {
   letter-spacing: -0.84px;
+}
+
+@media screen and (min-width: 800px) {
+  .first h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first h2 {
+    margin-bottom: 7.125rem;
+  }
 }
 
 .first .img-container {
@@ -521,12 +569,55 @@ footer .one {
   margin: 3.3125rem auto 2.875rem auto;
   background-image: url("../images/illustration-editor-mobile.svg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+  .first .img-container {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first .img-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lrg-img-container {
+    width: 55rem;
+    height: 55.125rem;
+    background-image: url("../images/illustration-editor-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -7.125rem;
+    margin-right: -17.1875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .second h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin-top: 7.125rem;
+    text-align: left;
+  }
 }
 
 .second p {
   margin: 1rem 1.5rem 2.5rem 2.0625rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .second p {
+    text-align: left;
+    margin: 1rem 0 0 0;
+  }
 }
 
 .third h2 {
@@ -534,8 +625,27 @@ footer .one {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .third h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    max-width: 100%;
+    margin-top: 4rem;
+    text-align: left;
+  }
+}
+
 .third p {
   margin: 1rem 1.5rem 6.2775rem 2.0625rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .third p {
+    text-align: left;
+    margin: 1rem 0 0 0;
+  }
 }
 
 .fourth .img-container {

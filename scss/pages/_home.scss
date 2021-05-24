@@ -1,37 +1,3 @@
-.first {
-    margin-top: toRem(100);
-
-    h2 {
-        letter-spacing: -0.84px;
-    }
-
-    .img-container {
-        width: toRem(326);
-        height: toRem(326);
-        margin: toRem(53) auto toRem(46) auto;
-        background-image: url('../images/illustration-editor-mobile.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}
-
-.second {
-    p {
-        margin: toRem(16) toRem(24) toRem(40) toRem(33);
-    }
-}
-
-.third {
-    h2 {
-        max-width: toRem(318);
-        margin: 0 auto;
-    }
-
-    p {
-        margin: toRem(16) toRem(24) toRem(100.44) toRem(33);
-    }
-}
 
 .fourth {
     .img-container{
