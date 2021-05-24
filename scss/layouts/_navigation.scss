@@ -174,10 +174,9 @@ nav {
             text-align: center;
 
             a {
-                @include ubuntu(15, 33, 400) {
-                    color: #2D2E40;
-                    opacity: 1;
-                }
+                @include ubuntu(15, 33, 400);
+                color: #2D2E40;
+                opacity: 1;
 
                 &:hover {
                     font-weight: 700;
