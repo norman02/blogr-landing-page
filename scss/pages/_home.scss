@@ -67,3 +67,8 @@
         margin: toRem(16) toRem(24) toRem(100) toRem(33);
     }
 }
+
+.page-container {
+    width: 100vw;
+    overflow: hidden;
+}

@@ -153,7 +153,7 @@ nav .logo {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   nav {
     max-width: 1800px;
     margin-right: auto;
@@ -515,7 +515,7 @@ footer .one {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .grid1 {
     max-width: 1800px;
     margin-right: auto;
@@ -726,5 +726,10 @@ footer .one {
 
 .sixth p {
   margin: 1rem 1.5rem 6.25rem 2.0625rem;
+}
+
+.page-container {
+  width: 100vw;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
