@@ -29,3 +29,23 @@
     }
 
 }
+
+.grid2 {
+    .deskto-img {
+        grid-area: image;
+    }
+
+    .fifth {
+        grid-area: one;
+    }
+
+    .sixth {
+        grid-area: two;
+    }
+
+    @include media-lg {
+        display: grid;
+        grid-template-areas: "image  one" "image two";
+    }
+   
+}
