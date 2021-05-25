@@ -1,24 +1,50 @@
 
 
-
+.desktop-img {
+    @include media-lg {
+        display: inline;
+        border: 2px solid green;
+        width: toRem(786);
+        height: toRem(786);
+        background-image: url('../../images/illustration-laptop-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
 .fifth {
     .img-container {
         width: toRem(326);
         height: toRem(326);
         margin: toRem(79) auto toRem(46) auto;
-        background-image: url('../../images/illustration-laptop-mobile.svg');
+        background-image: url('../images/illustration-laptop-mobile.svg');
         background-position: center;
         background-repeat: no-repeat;
+
+        @include media-lg {
+            display: none;
+        }
     }
 
     p {
         margin: toRem(16) toRem(24) toRem(40) toRem(33);
+
+        @include media-lg {
+            margin: 0;
+        }
+    }
+
+    @include media-lg {
+        border: 2px solid red;
     }
 }
 
 .sixth {
     p {
         margin: toRem(16) toRem(24) toRem(100) toRem(33);
+    }
+
+    @include media-lg {
+        border: 2px solid blue;
     }
 }
 

@@ -549,6 +549,25 @@ footer .one {
   }
 }
 
+.grid2 .deskto-img {
+  grid-area: image;
+}
+
+.grid2 .fifth {
+  grid-area: one;
+}
+
+.grid2 .sixth {
+  grid-area: two;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid2 {
+    display: grid;
+    grid-template-areas: "image  one" "image two";
+  }
+}
+
 .first {
   margin-top: 6.25rem;
 }
@@ -757,21 +776,57 @@ footer .one {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .desktop-img {
+    display: inline;
+    border: 2px solid green;
+    width: 49.125rem;
+    height: 49.125rem;
+    background-image: url("../../images/illustration-laptop-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 .fifth .img-container {
   width: 20.375rem;
   height: 20.375rem;
   margin: 4.9375rem auto 2.875rem auto;
-  background-image: url("../../images/illustration-laptop-mobile.svg");
+  background-image: url("../images/illustration-laptop-mobile.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .fifth .img-container {
+    display: none;
+  }
 }
 
 .fifth p {
   margin: 1rem 1.5rem 2.5rem 2.0625rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .fifth p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fifth {
+    border: 2px solid red;
+  }
+}
+
 .sixth p {
   margin: 1rem 1.5rem 6.25rem 2.0625rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .sixth {
+    border: 2px solid blue;
+  }
 }
 
 .page-container {
