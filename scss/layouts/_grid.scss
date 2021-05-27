@@ -31,8 +31,11 @@
 }
 
 .grid2 {
-    .deskto-img {
-        grid-area: image;
+
+    
+    .desktop-img {
+
+        grid-area: pic;
     }
 
     .fifth {
@@ -45,7 +48,7 @@
 
     @include media-lg {
         display: grid;
-        grid-template-areas: "image  one" "image two";
+        grid-template-areas: "pic one" "pic two";
     }
    
 }

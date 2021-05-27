@@ -549,8 +549,8 @@ footer .one {
   }
 }
 
-.grid2 .deskto-img {
-  grid-area: image;
+.grid2 .desktop-img {
+  grid-area: pic;
 }
 
 .grid2 .fifth {
@@ -564,7 +564,7 @@ footer .one {
 @media screen and (min-width: 1200px) {
   .grid2 {
     display: grid;
-    grid-template-areas: "image  one" "image two";
+    grid-template-areas: "pic one" "pic two";
   }
 }
 
@@ -779,12 +779,19 @@ footer .one {
 @media screen and (min-width: 1200px) {
   .desktop-img {
     display: inline;
-    border: 2px solid green;
     width: 49.125rem;
     height: 49.125rem;
+    padding-bottom: 7.6875rem;
     background-image: url("../../images/illustration-laptop-desktop.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: -17.4375rem center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fifth {
+    margin-top: 18.75rem;
   }
 }
 
@@ -808,14 +815,15 @@ footer .one {
 }
 
 @media screen and (min-width: 1200px) {
+  .fifth h2 {
+    margin: 0;
+    text-align: left;
+  }
   .fifth p {
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .fifth {
-    border: 2px solid red;
+    margin-top: 1rem;
+    max-width: 33.75rem;
+    text-align: left;
   }
 }
 
@@ -824,8 +832,15 @@ footer .one {
 }
 
 @media screen and (min-width: 1200px) {
-  .sixth {
-    border: 2px solid blue;
+  .sixth h2 {
+    margin: 0;
+    text-align: left;
+  }
+  .sixth p {
+    margin: 0;
+    max-width: 33.75rem;
+    margin-top: 1rem;
+    text-align: left;
   }
 }
 
