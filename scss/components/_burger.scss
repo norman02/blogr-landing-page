@@ -1,0 +1,27 @@
+.burger {
+    display: block;
+    
+  div {
+      width: 35px;
+      height: 5px;
+      background-color: $light-text-color;
+      margin: 6px 0;
+  }      
+   
+}
+
+.change {
+    transition: 0.8s;
+
+    .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .bar2 {
+        opacity: 0;
+    }
+    
+    .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
