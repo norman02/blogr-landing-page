@@ -48,4 +48,42 @@ p {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
+.burger {
+  display: block;
+}
+
+.burger div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.change {
+  transition: 0.8s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6.4%;
+  padding-top: 3.5rem;
+}
+
+header {
+  background-color: orange;
+}
 /*# sourceMappingURL=main.css.map */
