@@ -1,0 +1,5 @@
+@mixin textFormat($size, $lineHeight, $weight) {
+    font-size: toRem($size);
+    line-height: toRem($lineHeight);
+    font-weight: $weight;
+}
