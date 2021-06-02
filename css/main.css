@@ -200,4 +200,75 @@ footer section a {
   font-weight: 400;
   opacity: 0.75;
 }
+
+main {
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+main h2 {
+  color: #1F3E5A;
+  max-width: 19.875rem;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+main p {
+  color: #4C5862;
+  max-width: 19.875rem;
+  margin: 1rem auto 0 auto;
+}
+
+main .one img {
+  margin: 3.3125rem auto 2.875rem auto;
+  width: 20.375rem;
+}
+
+main .two {
+  margin-top: 2.875rem;
+}
+
+main .three {
+  margin-top: 2.5rem;
+}
+
+main .four {
+  position: relative;
+  margin-top: 6.2775rem;
+}
+
+main .four img {
+  margin: 0 auto;
+  width: 20.4025rem;
+}
+
+main .four h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+main .four p {
+  margin-top: 1.75rem;
+  color: white;
+}
+
+main .four::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100vw;
+  height: 625px;
+  top: 12.5rem;
+  left: 0;
+  z-index: -5;
+  background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0px 100px;
+}
+
+main .four::before {
+  border: 2px solid red;
+  content: "";
+}
 /*# sourceMappingURL=main.css.map */
