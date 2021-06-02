@@ -1,11 +1,23 @@
 
 //colors
 $orange: #FF8F71;
+$very-light-red: #FF7B86;
+$light-red: #FF505C;
 $red: #FF3E55;
 $very-dark-blue: #24242C;
 
 //header
 $header-bg-color: $orange;
+
+//buttons 
+$btn-bg-color: white;
+$btn-text-color: $light-red;
+$btn-active-color: $very-light-red;
+
+$btn-lt-bg-color: transparent;
+$btn-lt-text-color: white;
+$btn-lt-active-color: white;
+$btn-lt-active-txt: $very-light-red;
 
 //text
 $light-text-color: white;

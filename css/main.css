@@ -76,6 +76,47 @@ p {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.btn {
+  display: inline-block;
+  background-color: white;
+  width: 8.5625rem;
+  padding: 0.6875rem 0 1.1875rem 0;
+  color: #FF505C;
+  font-weight: bold;
+  border-radius: 28px;
+}
+
+.btn:hover {
+  width: 9.375rem;
+  background-color: #FF7B86;
+  color: white;
+  transition: 1s;
+}
+
+.btn:focus {
+  width: 9.375rem;
+  outline: none;
+  background-color: #FF7B86;
+  color: white;
+  transition: 1s;
+}
+
+.btn--lt {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn--lt:hover {
+  background-color: white;
+  color: #FF7B86;
+}
+
+.btn--lt:focus {
+  background-color: white;
+  color: #FF7B86;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -124,6 +165,10 @@ header p {
 
 header .cta {
   margin: 3.375rem auto 0 auto;
+}
+
+header .cta .btn {
+  margin-right: 1rem;
 }
 
 footer {

@@ -1,0 +1,41 @@
+.btn {
+    display: inline-block;
+    background-color: $btn-bg-color;
+    width: toRem(137);
+    padding: toRem(11) 0 toRem(19) 0;
+    color: $btn-text-color;
+    font-weight: bold;
+    border-radius: 28px;
+
+
+    &:hover {
+        width: toRem(150);
+        background-color: $btn-active-color;
+        color: $btn-bg-color;
+        transition: 1s;
+    }
+
+    &:focus {
+        width: toRem(150);
+        outline: none;
+        background-color: $btn-active-color;
+        color: $btn-bg-color;
+        transition: 1s;
+    }
+}
+
+.btn--lt{
+    background-color: $btn-lt-bg-color;
+    border: 1px solid $btn-lt-text-color;
+    color: $btn-lt-text-color;
+
+    &:hover {
+        background-color: $btn-lt-active-color;
+        color: $btn-lt-active-txt;
+    }
+
+    &:focus {
+        background-color: $btn-lt-active-color;
+        color: $btn-lt-active-txt;
+    }
+}

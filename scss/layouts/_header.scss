@@ -38,6 +38,10 @@ header {
     }
 
     .cta {
-       margin: toRem(54) auto 0 auto; 
+        margin: toRem(54) auto 0 auto; 
+        
+        .btn {
+            margin-right: toRem(16);
+        }
     }
 }
