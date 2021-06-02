@@ -1,0 +1,72 @@
+main {
+   margin-top: toRem(100); 
+   text-align: center;
+
+   h2 {
+       color: $heading-text-color;
+       max-width: toRem(318);
+       margin: 0 auto;
+       font-weight: 500;
+   }
+
+   p {
+       color: $primary-text-color;
+       max-width: toRem(318);
+       margin: toRem(16) auto 0 auto;
+   }
+
+   .one {
+       img {
+           margin: toRem(53) auto toRem(46) auto;
+           width: toRem(326);
+       }
+   }
+
+   .two {
+       margin-top: toRem(46);
+   }
+
+   .three {
+       margin-top: toRem(40);
+   }
+
+   .four {
+        position: relative;
+        margin-top: toRem(100.44);
+
+       img {
+           
+           margin: 0 auto;
+           width: toRem(326.44);
+       }
+
+       h2 {
+           @include textFormat(40, 48, 600);
+           color: white;
+       }
+
+       p {
+           margin-top: toRem(28);
+           color: white;
+       }
+
+       &::after {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 100vw;
+            height: 625px;
+            top: toRem(200);
+            left: 0;
+            z-index: -5;
+            background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
+            border-radius: 0px 100px;
+       }
+
+       &::before {
+            border: 2px solid red;
+            content: "";
+       }
+   }
+ 
+} 
