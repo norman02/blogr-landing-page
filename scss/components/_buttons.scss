@@ -1,61 +1,41 @@
 .btn {
-    @include ubuntu(16, 18, 700);
-    text-align: center;
-    padding: toRem(8) toRem(16) toRem(22) toRem(16);
-    min-width: toRem(137);
+    display: inline-block;
+    background-color: $btn-bg-color;
+    width: toRem(137);
+    padding: toRem(11) 0 toRem(19) 0;
+    color: $btn-text-color;
+    font-weight: bold;
     border-radius: 28px;
-    cursor: pointer;
-    transition: 0.75s;
-}
 
-.btn--light {
-    background-color: $header-text-color;
-    color: $cta-text-color;
 
     &:hover {
-        background-color: $cta-hover-color;
-        color: $header-text-color;
+        width: toRem(150);
+        background-color: $btn-active-color;
+        color: $btn-bg-color;
+        transition: 1s;
     }
 
     &:focus {
+        width: toRem(150);
         outline: none;
-        background-color: $cta-hover-color;
-        color: $header-text-color;
+        background-color: $btn-active-color;
+        color: $btn-bg-color;
+        transition: 1s;
     }
 }
 
-.btn--dark {
-    border: 1px solid $header-text-color;
-    background: transparent;
-    color: $header-text-color;
-    
+.btn--lt{
+    background-color: $btn-lt-bg-color;
+    border: 1px solid $btn-lt-text-color;
+    color: $btn-lt-text-color;
+
     &:hover {
-        background: $header-text-color;
-        color: $cta-text-color;
+        background-color: $btn-lt-active-color;
+        color: $btn-lt-active-txt;
     }
 
     &:focus {
-        outline: none;
-        background: $header-text-color;
-        color: $cta-text-color;
+        background-color: $btn-lt-active-color;
+        color: $btn-lt-active-txt;
     }
-}
-
-.btn--login {
-        border: 1px solid $header-text-color;
-        background: $cta-gradient;
-        color: $header-text-color;
-        
-        &:hover {
-            background: $header-text-color;
-            color: $cta-text-color;
-            border: 2px solid $cta-hover-color;
-        }
-    
-        &:focus {
-            outline: none;
-            background: $header-text-color;
-            color: $cta-text-color;
-        }
-
 }

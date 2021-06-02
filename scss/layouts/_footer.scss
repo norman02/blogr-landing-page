@@ -1,57 +1,25 @@
 footer {
-    background-color: $footer-background-color;
-    border-radius: 0 100px 0 0;
+    background-color: $footer-bg-color;
+    color: $light-text-color;
     text-align: center;
-    padding-top: toRem(75);
-    padding-bottom: toRem(75);
+    padding: toRem(75) 0;
+    border-radius: 0px 100px 0px 0px;
 
-    @include media-md {
-        text-align: left;
-        display: grid;
-        grid-template-columns: auto auto;
-        padding-top: toRem(70);
-        padding-left: toRem(136);
-        padding-bottom: toRem(70);
+    img {
+        margin-bottom: toRem(72.57);
     }
 
-    @include media-lg {
-        grid-template-columns: auto auto auto auto;
-    }
+    section {
+        margin-bottom: toRem(48);
 
-    h2 {
-       @include ubuntu(18, 33, 500);
-       color: $footer-text-color; 
-
-       @include media-md {
-           @include ubuntu(15, 33, 500);
-           text-align: left;
-       }
-    }
-
-    ul {
-        margin-top: toRem(34);
-        margin-bottom: toRem(40);
-
-        @include media-md {
-            margin-top: toRem(39);
+        h2 {
+            @include textFormat(18, 33, 500);
+            margin-bottom: toRem(34);
         }
-    }
 
-    a {
-        @include ubuntu(18, 33, 400);
-        color: $footer-text-color;
-        opacity: 0.75;
-
-        @include media-md {
-            @include ubuntu(15, 33, 400);
-        }
-    }
-
-    .one {
-        margin-top: toRem(72.75);
-
-        @include media-md {
-            margin-top: 0;
+        a {
+            @include textFormat(18, 33, 400);
+            opacity: 0.75;
         }
     }
 }

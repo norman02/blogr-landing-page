@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
+html {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+h1 , h2 {
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    @include textFormat(36, 43, 600);
+}
+
 h2 {
-    @include overpass(28, 34, 500);
-    text-align: center;
-    color: $heading-text-color;
+    @include textFormat(28, 34, 600);
+    letter-spacing: 0.84px;
 }
 
 p {
-   @include overpass(16, 28, 400);
-   letter-spacing: 0.5px; 
-   text-align: center;
-   color: $body-text-color;
+    @include textFormat(16, 28, 400);
+    letter-spacing: 0.5px;
 }
