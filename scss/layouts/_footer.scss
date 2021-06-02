@@ -1,0 +1,25 @@
+footer {
+    background-color: $footer-bg-color;
+    color: $light-text-color;
+    text-align: center;
+    padding: toRem(75) 0;
+    border-radius: 0px 100px 0px 0px;
+
+    img {
+        margin-bottom: toRem(72.57);
+    }
+
+    section {
+        margin-bottom: toRem(48);
+
+        h2 {
+            @include textFormat(18, 33, 500);
+            margin-bottom: toRem(34);
+        }
+
+        a {
+            @include textFormat(18, 33, 400);
+            opacity: 0.75;
+        }
+    }
+}

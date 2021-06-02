@@ -125,4 +125,34 @@ header p {
 header .cta {
   margin: 3.375rem auto 0 auto;
 }
+
+footer {
+  background-color: #24242C;
+  color: white;
+  text-align: center;
+  padding: 4.6875rem 0;
+  border-radius: 0px 100px 0px 0px;
+}
+
+footer img {
+  margin-bottom: 4.53562rem;
+}
+
+footer section {
+  margin-bottom: 3rem;
+}
+
+footer section h2 {
+  font-size: 1.125rem;
+  line-height: 2.0625rem;
+  font-weight: 500;
+  margin-bottom: 2.125rem;
+}
+
+footer section a {
+  font-size: 1.125rem;
+  line-height: 2.0625rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
 /*# sourceMappingURL=main.css.map */
