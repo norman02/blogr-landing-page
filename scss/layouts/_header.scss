@@ -4,7 +4,7 @@ header {
     border-radius: 0px 0px 0px 100px;
     text-align: center;
     padding-bottom: toRem(156);
-    overflow: hidden;
+    overflow: visible;
     z-index: 5;
 
     &::before {
