@@ -42,6 +42,7 @@ main {
 
        h2 {
            @include textFormat(40, 48, 600);
+           margin-top: toRem(48.31);
            color: white;
        }
 
@@ -64,9 +65,32 @@ main {
        }
 
        &::before {
-            border: 2px solid red;
+            position: absolute;
+            display: inline-block;
             content: "";
+            width: 100vw;
+            height: 625px;
+            top: toRem(200);
+            left: 0;
+            z-index: -2;
+            background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
+            border-radius: 0px 100px;
+            background-image: url('../../images/bg-pattern-circles.svg');
+            background-size: cover;
+            background-position: center toRem(-300);
        }
+   }
+
+   .five {
+
+       img {
+           margin: toRem(188) auto toRem(46) auto;
+           width: toRem(326);
+       }
+   }
+
+   .six {
+       margin: toRem(40) auto toRem(100) auto; 
    }
  
 } 

@@ -246,6 +246,7 @@ main .four h2 {
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 600;
+  margin-top: 3.01938rem;
   color: white;
 }
 
@@ -268,7 +269,27 @@ main .four::after {
 }
 
 main .four::before {
-  border: 2px solid red;
+  position: absolute;
+  display: inline-block;
   content: "";
+  width: 100vw;
+  height: 625px;
+  top: 12.5rem;
+  left: 0;
+  z-index: -2;
+  background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0px 100px;
+  background-image: url("../../images/bg-pattern-circles.svg");
+  background-size: cover;
+  background-position: center -18.75rem;
+}
+
+main .five img {
+  margin: 11.75rem auto 2.875rem auto;
+  width: 20.375rem;
+}
+
+main .six {
+  margin: 2.5rem auto 6.25rem auto;
 }
 /*# sourceMappingURL=main.css.map */
