@@ -133,8 +133,8 @@ nav {
   padding-top: 3.5rem;
 }
 
-nav .nav-menue {
-  display: inline;
+.nav-menue {
+  display: none;
   position: absolute;
   left: 0;
   top: 7.8125rem;
@@ -148,7 +148,11 @@ nav .nav-menue {
   border-radius: 5px;
 }
 
-nav .nav-menue h2 {
+.nav-menue.active {
+  display: inline;
+}
+
+.nav-menue h2 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -156,13 +160,17 @@ nav .nav-menue h2 {
   margin-bottom: 2.125rem;
 }
 
-nav .nav-menue .arrow {
+.nav-menue .arrow {
   margin-left: 0.625rem;
   margin-bottom: -0.4375rem;
 }
 
-nav .nav-menue ul {
-  display: block;
+.nav-menue .arrow.active {
+  transform: rotate(180deg);
+}
+
+.nav-menue ul {
+  display: none;
   background: rgba(44, 45, 63, 0.08);
   border-radius: 5px;
   margin: 0 1.5rem;
@@ -170,20 +178,24 @@ nav .nav-menue ul {
   padding-bottom: 2.3125rem;
 }
 
-nav .nav-menue ul li {
+.nav-menue ul.active {
+  display: block;
+}
+
+.nav-menue ul li {
   margin-bottom: 1.5rem;
 }
 
-nav .nav-menue ul li a {
+.nav-menue ul li a {
   color: rgba(31, 63, 91, 0.75);
 }
 
-nav .nav-menue .login {
+.nav-menue .login {
   border-top: 1px solid rgba(0, 0, 0, 0.09);
   margin: 1.5rem;
 }
 
-nav .nav-menue .login h2 {
+.nav-menue .login h2 {
   margin-top: 1.5625rem;
 }
 

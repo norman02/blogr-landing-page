@@ -4,61 +4,75 @@ nav {
     margin: 0 6.4%;
     padding-top: toRem(56);
     
+}
 
+.nav-menue {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: toRem(125);
+    width: toRem(324);
+    margin: 0 6.4%;
+    text-align: center;
+    padding-top: toRem(24);
+    padding-bottom: toRem(32);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #0000003E;
+    border-radius: 5px;  
 
-    .nav-menue {
+    &.active {
         display: inline;
-        position: absolute;
-        left: 0;
-        top: toRem(125);
-        width: toRem(324);
-        margin: 0 6.4%;
-        text-align: center;
-        padding-top: toRem(24);
-        padding-bottom: toRem(32);
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 20px 40px #0000003E;
-        border-radius: 5px;     
+    }
     
-        h2 {
-            @include textFormat(18, 28, 600);
-            color: #1F3E5A;
-            margin-bottom: toRem(34);
+    
+
+    h2 {
+        @include textFormat(18, 28, 600);
+        color: #1F3E5A;
+        margin-bottom: toRem(34);
+    }
+
+    .arrow {
+        margin-left: toRem(10);
+        margin-bottom: toRem(-7);
+
+        &.active {
+            transform: rotate(180deg);
         }
+    }
 
-        .arrow {
-            margin-left: toRem(10);
-            margin-bottom: toRem(-7);
-        }
+    
 
-        
+    ul {
+        display: none;
+        background: hsla(237, 17%, 21%, 0.08);
+        border-radius: 5px;
+        margin: 0 toRem(24);
+        padding-top: toRem(17);
+        padding-bottom: toRem(37);
 
-        ul {
+        &.active {
             display: block;
-            background: hsla(237, 17%, 21%, 0.08);
-            border-radius: 5px;
-            margin: 0 toRem(24);
-            padding-top: toRem(17);
-            padding-bottom: toRem(37);
-
-            li {
-                margin-bottom: toRem(24);
-
-                a {
-                color: hsla(208, 49%, 24%, 0.75); 
-                }
-            }
         }
 
-        .login {
-            border-top: 1px solid hsla(0, 0%, 0%, .09);
-            margin: toRem(24);
+        li {
+            margin-bottom: toRem(24);
 
-            h2 {
-                margin-top: toRem(25);
+            a {
+            color: hsla(208, 49%, 24%, 0.75); 
             }
         }
+    }
+
+    .login {
+        border-top: 1px solid hsla(0, 0%, 0%, .09);
+        margin: toRem(24);
+
+        h2 {
+            margin-top: toRem(25);
+        }
+    }
 
 }
 
-}
+
