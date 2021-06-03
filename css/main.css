@@ -54,14 +54,11 @@ p {
 }
 
 .burger div {
+  transition: 0.75s;
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-}
-
-.change {
-  transition: 0.8s;
 }
 
 .change .bar1 {
@@ -87,18 +84,18 @@ p {
 }
 
 .btn:hover {
+  transition: 0.75s;
   width: 9.375rem;
   background-color: #FF7B86;
   color: white;
-  transition: 1s;
 }
 
 .btn:focus {
+  transition: 0.75s;
   width: 9.375rem;
   outline: none;
   background-color: #FF7B86;
   color: white;
-  transition: 1s;
 }
 
 .btn--lt {

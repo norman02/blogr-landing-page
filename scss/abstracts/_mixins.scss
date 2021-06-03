@@ -3,3 +3,8 @@
     line-height: toRem($lineHeight);
     font-weight: $weight;
 }
+
+@mixin transition-ease {
+    transition: 0.75s;
+
+}

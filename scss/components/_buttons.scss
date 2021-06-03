@@ -9,18 +9,19 @@
 
 
     &:hover {
+        @include transition-ease;
         width: toRem(150);
         background-color: $btn-active-color;
         color: $btn-bg-color;
-        transition: 1s;
+        
     }
 
     &:focus {
+        @include transition-ease;
         width: toRem(150);
         outline: none;
         background-color: $btn-active-color;
         color: $btn-bg-color;
-        transition: 1s;
     }
 }
 
