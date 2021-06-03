@@ -2,6 +2,7 @@
     display: block;
     
   div {
+      @include transition-ease;
       width: 35px;
       height: 5px;
       background-color: $light-text-color;
@@ -11,7 +12,7 @@
 }
 
 .change {
-    transition: 0.8s;
+    
 
     .bar1 {
         transform: rotate(-45deg) translate(-9px, 6px);

@@ -9,18 +9,19 @@
 
 
     &:hover {
+        @include transition-ease;
         width: toRem(150);
         background-color: $btn-active-color;
         color: $btn-bg-color;
-        transition: 1s;
+        
     }
 
     &:focus {
+        @include transition-ease;
         width: toRem(150);
         outline: none;
         background-color: $btn-active-color;
         color: $btn-bg-color;
-        transition: 1s;
     }
 }
 
@@ -37,5 +38,17 @@
     &:focus {
         background-color: $btn-lt-active-color;
         color: $btn-lt-active-txt;
+    }
+}
+
+.btn--dark {
+    background: transparent linear-gradient(109deg, #FF8F71 0%, #FF3E55 100%) 0% 0% no-repeat padding-box;
+    color: white;
+
+    &:hover {
+        background: none;
+        background-color: $btn-bg-color;
+        color: $btn-text-color;
+        border: 2px solid $btn-text-color;
     }
 }

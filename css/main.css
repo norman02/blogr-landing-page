@@ -54,14 +54,11 @@ p {
 }
 
 .burger div {
+  transition: 0.75s;
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-}
-
-.change {
-  transition: 0.8s;
 }
 
 .change .bar1 {
@@ -87,18 +84,18 @@ p {
 }
 
 .btn:hover {
+  transition: 0.75s;
   width: 9.375rem;
   background-color: #FF7B86;
   color: white;
-  transition: 1s;
 }
 
 .btn:focus {
+  transition: 0.75s;
   width: 9.375rem;
   outline: none;
   background-color: #FF7B86;
   color: white;
-  transition: 1s;
 }
 
 .btn--lt {
@@ -117,11 +114,94 @@ p {
   color: #FF7B86;
 }
 
+.btn--dark {
+  background: transparent linear-gradient(109deg, #FF8F71 0%, #FF3E55 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.btn--dark:hover {
+  background: none;
+  background-color: white;
+  color: #FF505C;
+  border: 2px solid #FF505C;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   margin: 0 6.4%;
   padding-top: 3.5rem;
+}
+
+.nav-menue {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 7.8125rem;
+  width: 20.25rem;
+  margin: 0 6.4%;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 40px #0000003E;
+  border-radius: 5px;
+}
+
+.nav-menue.active {
+  display: inline;
+}
+
+.nav-menue h2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #1F3E5A;
+  margin-bottom: 2.125rem;
+}
+
+.nav-menue h2:hover {
+  cursor: pointer;
+  color: #FF505C;
+}
+
+.nav-menue .arrow {
+  margin-left: 0.625rem;
+  margin-bottom: -0.4375rem;
+}
+
+.nav-menue ul {
+  display: none;
+  background: rgba(44, 45, 63, 0.08);
+  border-radius: 5px;
+  margin: 0 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 2.3125rem;
+}
+
+.nav-menue ul li {
+  margin-bottom: 1.5rem;
+}
+
+.nav-menue ul li a {
+  color: rgba(31, 63, 91, 0.75);
+}
+
+.nav-menue .login {
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  margin: 1.5rem;
+}
+
+.nav-menue .login h2 {
+  margin-top: 1.5625rem;
+}
+
+.nav-menue .open .arrow {
+  transform: rotate(180deg);
+}
+
+.nav-menue .open ul {
+  display: block;
 }
 
 header {
@@ -130,7 +210,7 @@ header {
   border-radius: 0px 0px 0px 100px;
   text-align: center;
   padding-bottom: 9.75rem;
-  overflow: hidden;
+  overflow: visible;
   z-index: 5;
 }
 
