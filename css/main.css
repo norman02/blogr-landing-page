@@ -160,13 +160,14 @@ nav {
   margin-bottom: 2.125rem;
 }
 
+.nav-menue h2:hover {
+  cursor: pointer;
+  color: #FF505C;
+}
+
 .nav-menue .arrow {
   margin-left: 0.625rem;
   margin-bottom: -0.4375rem;
-}
-
-.nav-menue .arrow.active {
-  transform: rotate(180deg);
 }
 
 .nav-menue ul {
@@ -176,10 +177,6 @@ nav {
   margin: 0 1.5rem;
   padding-top: 1.0625rem;
   padding-bottom: 2.3125rem;
-}
-
-.nav-menue ul.active {
-  display: block;
 }
 
 .nav-menue ul li {
@@ -197,6 +194,14 @@ nav {
 
 .nav-menue .login h2 {
   margin-top: 1.5625rem;
+}
+
+.nav-menue .open .arrow {
+  transform: rotate(180deg);
+}
+
+.nav-menue .open ul {
+  display: block;
 }
 
 header {
