@@ -40,3 +40,15 @@
         color: $btn-lt-active-txt;
     }
 }
+
+.btn--dark {
+    background: transparent linear-gradient(109deg, #FF8F71 0%, #FF3E55 100%) 0% 0% no-repeat padding-box;
+    color: white;
+
+    &:hover {
+        background: none;
+        background-color: $btn-bg-color;
+        color: $btn-text-color;
+        border: 2px solid $btn-text-color;
+    }
+}
