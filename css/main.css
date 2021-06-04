@@ -470,6 +470,14 @@ footer {
   border-radius: 0px 100px 0px 0px;
 }
 
+@media screen and (min-width: 800px) {
+  footer {
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+  }
+}
+
 footer img {
   margin-bottom: 4.53562rem;
 }
