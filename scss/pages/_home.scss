@@ -30,56 +30,7 @@ main {
        margin-top: toRem(40);
    }
 
-   .four {
-        position: relative;
-        margin-top: toRem(100.44);
 
-       img {
-           
-           margin: 0 auto;
-           width: toRem(326.44);
-       }
-
-       h2 {
-           @include textFormat(40, 48, 600);
-           margin-top: toRem(48.31);
-           color: white;
-       }
-
-       p {
-           margin-top: toRem(28);
-           color: white;
-       }
-
-       &::after {
-            position: absolute;
-            display: inline-block;
-            content: "";
-            width: 100vw;
-            height: 625px;
-            top: toRem(200);
-            left: 0;
-            z-index: -5;
-            background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
-            border-radius: 0px 100px;
-       }
-
-       &::before {
-            position: absolute;
-            display: inline-block;
-            content: "";
-            width: 100vw;
-            height: 625px;
-            top: toRem(200);
-            left: 0;
-            z-index: -2;
-            background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
-            border-radius: 0px 100px;
-            background-image: url('../../images/bg-pattern-circles.svg');
-            background-size: cover;
-            background-position: center toRem(-300);
-       }
-   }
 
    .five {
 

@@ -558,6 +558,128 @@ footer section a {
   display: none;
 }
 
+.four {
+  position: relative;
+  margin-top: 6.2775rem;
+}
+
+@media screen and (min-width: 800px) {
+  .four {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.four img {
+  position: relative;
+  z-index: 15;
+  margin: 0 auto;
+  width: 20.4025rem;
+}
+
+@media screen and (min-width: 800px) {
+  .four img {
+    margin: 0;
+    margin-right: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .four img {
+    width: 34.375rem;
+    margin-top: -4.6875rem;
+    margin-right: 6.125rem;
+  }
+}
+
+.four h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  position: relative;
+  margin-top: 3.01938rem;
+  color: white;
+  z-index: 10;
+}
+
+@media screen and (min-width: 800px) {
+  .four h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .four h2 {
+    margin-top: 6.9375rem;
+    max-width: 33.75rem;
+  }
+}
+
+.four p {
+  position: relative;
+  z-index: 10;
+  margin-top: 1.75rem;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .four p {
+    margin-top: 1.625rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .four p {
+    max-width: 33.75rem;
+  }
+}
+
+.four::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100vw;
+  height: 625px;
+  top: 12.5rem;
+  left: 0;
+  z-index: 0;
+  background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0px 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .four::after {
+    top: 0;
+    height: 400px;
+  }
+}
+
+.four::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100vw;
+  height: 625px;
+  top: 12.5rem;
+  left: 0;
+  z-index: 5;
+  border-radius: 0px 100px;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-size: cover;
+  background-position: center -18.75rem;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+  .four::before {
+    top: 0;
+    height: 400px;
+    background-size: 1000px;
+    background-position: -13.3125rem -31.25rem;
+  }
+}
+
 main {
   margin-top: 6.25rem;
   text-align: center;
@@ -587,58 +709,6 @@ main .two {
 
 main .three {
   margin-top: 2.5rem;
-}
-
-main .four {
-  position: relative;
-  margin-top: 6.2775rem;
-}
-
-main .four img {
-  margin: 0 auto;
-  width: 20.4025rem;
-}
-
-main .four h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 600;
-  margin-top: 3.01938rem;
-  color: white;
-}
-
-main .four p {
-  margin-top: 1.75rem;
-  color: white;
-}
-
-main .four::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 100vw;
-  height: 625px;
-  top: 12.5rem;
-  left: 0;
-  z-index: -5;
-  background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
-  border-radius: 0px 100px;
-}
-
-main .four::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 100vw;
-  height: 625px;
-  top: 12.5rem;
-  left: 0;
-  z-index: -2;
-  background: transparent linear-gradient(149deg, #2D2E40 0%, #3F4164 100%) 0% 0% no-repeat padding-box;
-  border-radius: 0px 100px;
-  background-image: url("../../images/bg-pattern-circles.svg");
-  background-size: cover;
-  background-position: center -18.75rem;
 }
 
 main .five img {
