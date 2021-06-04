@@ -99,17 +99,27 @@ p {
 }
 
 .btn--lt {
+  display: inline-block;
   background-color: transparent;
-  border: 1px solid white;
+  width: 8.5625rem;
+  padding: 0.6875rem 0 1.1875rem 0;
   color: white;
+  font-weight: bold;
+  border-radius: 28px;
+  border: 1px solid white;
 }
 
 .btn--lt:hover {
+  transition: 0.75s;
+  width: 9.375rem;
   background-color: white;
   color: #FF7B86;
 }
 
 .btn--lt:focus {
+  transition: 0.75s;
+  width: 9.375rem;
+  outline: none;
   background-color: white;
   color: #FF7B86;
 }
@@ -126,6 +136,32 @@ p {
   border: 2px solid #FF505C;
 }
 
+@media screen and (min-width: 800px) {
+  .btn--dark {
+    background: none;
+    display: inline-block;
+    background-color: white;
+    width: 8.5625rem;
+    padding: 0.6875rem 0 1.1875rem 0;
+    color: #FF505C;
+    font-weight: bold;
+    border-radius: 28px;
+  }
+  .btn--dark:hover {
+    transition: 0.75s;
+    width: 9.375rem;
+    background-color: #FF7B86;
+    color: white;
+  }
+  .btn--dark:focus {
+    transition: 0.75s;
+    width: 9.375rem;
+    outline: none;
+    background-color: #FF7B86;
+    color: white;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -133,10 +169,34 @@ nav {
   padding-top: 3.5rem;
 }
 
+@media screen and (min-width: 800px) {
+  nav {
+    align-items: center;
+    justify-content: left;
+  }
+  nav .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    margin: 0 11.6%;
+    padding-top: 3.9375rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  nav {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
 .nav-menue {
   display: none;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 7.8125rem;
   width: 20.25rem;
   margin: 0 6.4%;
@@ -152,7 +212,30 @@ nav {
   display: inline;
 }
 
-.nav-menue h2 {
+@media screen and (min-width: 800px) {
+  .nav-menue {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    position: relative;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menue {
+    padding-left: 4.02375rem;
+  }
+}
+
+.nav-menue .menue-cont h2 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -160,14 +243,56 @@ nav {
   margin-bottom: 2.125rem;
 }
 
-.nav-menue h2:hover {
+@media screen and (min-width: 800px) {
+  .nav-menue .menue-cont h2 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 1.5625rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menue .menue-cont h2 {
+    margin-right: 2rem;
+  }
+}
+
+.nav-menue .menue-cont h2:hover {
   cursor: pointer;
   color: #FF505C;
 }
 
+@media screen and (min-width: 800px) {
+  .nav-menue .menue-cont h2:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-menue .menue-cont {
+    display: flex;
+  }
+}
+
 .nav-menue .arrow {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
   margin-left: 0.625rem;
   margin-bottom: -0.4375rem;
+  background-image: url("../images/icon-arrow-dark.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-menue .arrow {
+    background-image: url("../images/icon-arrow-light.svg");
+    margin-left: 0;
+  }
 }
 
 .nav-menue ul {
@@ -179,6 +304,17 @@ nav {
   padding-bottom: 2.3125rem;
 }
 
+@media screen and (min-width: 800px) {
+  .nav-menue ul {
+    top: 3.125rem;
+    position: absolute;
+    width: 10.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #0000003E;
+    border-radius: 5px;
+  }
+}
+
 .nav-menue ul li {
   margin-bottom: 1.5rem;
 }
@@ -187,13 +323,55 @@ nav {
   color: rgba(31, 63, 91, 0.75);
 }
 
+.nav-menue ul li a:hover {
+  color: #2D2E40;
+}
+
 .nav-menue .login {
   border-top: 1px solid rgba(0, 0, 0, 0.09);
   margin: 1.5rem;
 }
 
+@media screen and (min-width: 800px) {
+  .nav-menue .login {
+    border: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .nav-menue .login h2 {
   margin-top: 1.5625rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #1F3E5A;
+  margin-bottom: 2.125rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-menue .login h2 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 1.5625rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-menue .login h2 {
+    margin: 0;
+    margin-right: 2rem;
+  }
+}
+
+.nav-menue .login .btn {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 700;
 }
 
 .nav-menue .open .arrow {

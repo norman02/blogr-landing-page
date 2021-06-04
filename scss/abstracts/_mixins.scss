@@ -6,5 +6,49 @@
 
 @mixin transition-ease {
     transition: 0.75s;
+}
 
+@mixin button($bg-color, $color, $active-bg-color, $active-color) {
+    display: inline-block;
+    background-color: $bg-color;
+    width: toRem(137);
+    padding: toRem(11) 0 toRem(19) 0;
+    color: $color;
+    font-weight: bold;
+    border-radius: 28px;
+
+
+    &:hover {
+        @include transition-ease;
+        width: toRem(150);
+        background-color: $active-bg-color;
+        color: $active-color;
+        
+    }
+
+    &:focus {
+        @include transition-ease;
+        width: toRem(150);
+        outline: none;
+        background-color: $active-bg-color;
+        color: $active-color;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
 }
