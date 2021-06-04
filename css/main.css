@@ -492,6 +492,72 @@ footer section a {
   opacity: 0.75;
 }
 
+@media screen and (min-width: 800px) {
+  .grid--1 .one {
+    grid-area: one;
+  }
+  .grid--1 .one h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    max-width: 100%;
+    margin-top: 9.375rem;
+    margin-bottom: 7.125rem;
+  }
+  .grid--1 .one img {
+    width: 37.5rem;
+  }
+  .grid--1 h2 {
+    max-width: 31.25rem;
+  }
+  .grid--1 p {
+    max-width: 31.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid--1 {
+    display: grid;
+    grid-template-areas: 'one one' 'two img' 'three img' '. img';
+    overflow: hidden;
+  }
+  .grid--1 .one img {
+    display: none;
+  }
+  .grid--1 h2 {
+    max-width: 43.75rem;
+  }
+  .grid--1 p {
+    max-width: 43.75rem;
+  }
+  .grid--1 .two {
+    grid-area: two;
+    text-align: left;
+  }
+  .grid--1 .three {
+    grid-area: three;
+    text-align: left;
+  }
+  .grid--1 .img-desktop {
+    display: inline-block;
+    margin-right: -40.625rem;
+    margin-top: -10.9375rem;
+    grid-area: img;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .grid--1 {
+    max-width: 1600;
+    margin: 0 auto;
+  }
+}
+
+.img-desktop {
+  display: none;
+}
+
 main {
   margin-top: 6.25rem;
   text-align: center;
