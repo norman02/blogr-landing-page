@@ -1,44 +1,12 @@
+
+
 .btn {
-    display: inline-block;
-    background-color: $btn-bg-color;
-    width: toRem(137);
-    padding: toRem(11) 0 toRem(19) 0;
-    color: $btn-text-color;
-    font-weight: bold;
-    border-radius: 28px;
-
-
-    &:hover {
-        @include transition-ease;
-        width: toRem(150);
-        background-color: $btn-active-color;
-        color: $btn-bg-color;
-        
-    }
-
-    &:focus {
-        @include transition-ease;
-        width: toRem(150);
-        outline: none;
-        background-color: $btn-active-color;
-        color: $btn-bg-color;
-    }
+    @include button($btn-bg-color, $btn-text-color, $btn-active-color, $btn-bg-color)
 }
 
-.btn--lt{
-    background-color: $btn-lt-bg-color;
+.btn--lt {
+    @include button($btn-lt-bg-color, $btn-lt-text-color, $btn-lt-active-color, $btn-lt-active-txt);
     border: 1px solid $btn-lt-text-color;
-    color: $btn-lt-text-color;
-
-    &:hover {
-        background-color: $btn-lt-active-color;
-        color: $btn-lt-active-txt;
-    }
-
-    &:focus {
-        background-color: $btn-lt-active-color;
-        color: $btn-lt-active-txt;
-    }
 }
 
 .btn--dark {
@@ -50,5 +18,10 @@
         background-color: $btn-bg-color;
         color: $btn-text-color;
         border: 2px solid $btn-text-color;
+    }
+
+    @include media-md {
+        background: none;
+        @include button($btn-bg-color, $btn-text-color, $btn-active-color, $btn-bg-color);
     }
 }
