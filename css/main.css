@@ -680,6 +680,48 @@ footer section a {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .grid--3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid--3 h2 {
+    max-width: 33.75rem;
+  }
+  .grid--3 p {
+    max-width: 33.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid--3 {
+    display: grid;
+    grid-template-areas: 'img .' 'img first' 'img second' 'img .';
+    margin-top: 4.15313rem;
+    column-gap: 0;
+  }
+  .grid--3 h2 {
+    text-align: left;
+  }
+  .grid--3 p {
+    text-align: left;
+  }
+  .grid--3 img {
+    display: none;
+  }
+  .grid--3 .img-desktop {
+    display: inline;
+    grid-area: img;
+    margin-left: -18.75rem;
+  }
+  .grid--3 .five {
+    grid-area: first;
+  }
+  .grid--3 .six {
+    grid-area: second;
+  }
+}
+
 main {
   margin-top: 6.25rem;
   text-align: center;

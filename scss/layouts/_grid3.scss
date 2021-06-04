@@ -1,0 +1,52 @@
+.grid--3 {
+
+
+    @include media-md {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            max-width: toRem(540);
+        }
+
+        p {
+            max-width: toRem(540);
+        }
+
+    }
+
+    @include media-lg {
+        display: grid;
+        grid-template-areas: 'img .' 'img first' 'img second' 'img .';
+        margin-top: toRem(66.45);
+        column-gap: 0;
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            display: none;
+        }
+
+        .img-desktop {
+            display: inline;
+            grid-area: img;
+            margin-left: toRem(-300);
+        }
+
+        .five {
+            grid-area: first;
+        }
+
+        .six {
+            grid-area: second;
+        }
+    }
+    
+
+
+}
