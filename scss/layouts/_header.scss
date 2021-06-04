@@ -21,6 +21,11 @@ header {
         background-repeat: no-repeat;
         overflow: hidden;
         z-index: -2;
+
+        @include media-md{
+            background-size: 2224px;
+            background-position: toRem(37) toRem(-869);
+        }
                
     }
 
@@ -29,12 +34,29 @@ header {
         letter-spacing: toRem(-1.08);
         max-width: toRem(300);
         margin: toRem(108) auto toRem(27) auto;
+
+
+        @include media-md {
+            @include textFormat(64,77, 600);
+            max-width: toRem(600);
+            margin-top: toRem(119);
+            margin-bottom: toRem(33);
+        }
+
+        @include media-lg {
+            max-width: 100%;
+        }
     }
 
     p {
         color: $light-text-color;
         max-width: toRem(327);
         margin: 0 auto;
+
+        @include media-md {
+            @include textFormat(20, 24, 400);
+            max-width: 100%;
+        }
     }
 
     .cta {
