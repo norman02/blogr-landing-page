@@ -408,6 +408,13 @@ header::before {
   z-index: -2;
 }
 
+@media screen and (min-width: 800px) {
+  header::before {
+    background-size: 2224px;
+    background-position: 2.3125rem -54.3125rem;
+  }
+}
+
 header h1 {
   color: white;
   letter-spacing: -0.0675rem;
@@ -415,10 +422,36 @@ header h1 {
   margin: 6.75rem auto 1.6875rem auto;
 }
 
+@media screen and (min-width: 800px) {
+  header h1 {
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    font-weight: 600;
+    max-width: 37.5rem;
+    margin-top: 7.4375rem;
+    margin-bottom: 2.0625rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header h1 {
+    max-width: 100%;
+  }
+}
+
 header p {
   color: white;
   max-width: 20.4375rem;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  header p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    max-width: 100%;
+  }
 }
 
 header .cta {
